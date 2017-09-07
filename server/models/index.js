@@ -1,0 +1,22 @@
+module.exports =  {
+  user:{
+    name:{type:String,required:true},
+    password:{type:String,required:true},
+    email:{type:String,required:true},
+    userId:{type:String,require:true}
+  },
+  album_list:{
+    mainImage:{type:String,required:true},
+    creator:{type:String,required:true},
+    genre:{type:String,required:true},
+    albumName:{type:String,required:true},
+    singer:{type:String,required:true},
+    createDate:{type:Date},
+    albumCode:{type:String,required:true},
+    likeNum:{type:Number,required:true}
+  },
+  favor_list:{
+    userId:{type:String,require:true},
+    list:[String]
+  }
+};
